@@ -29,7 +29,7 @@ export const projects = [
     description:
       "Web App using .NET Framework and Web Services to create a recipe management app. Used C#, WSDL services and RESTful APIs, Cookies, DLL classes, and Forms Security.",
     image: "./proj-4.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/Campbell3377/RecipesApp",
   },
 ];
 
@@ -73,11 +73,11 @@ export const socials = [
   {
     image: "./iconmonstr-github-5.svg",
     name: "GitHub",
-    link: "",
+    link: "https://github.com/Campbell3377",
   },
   {
     image: "./iconmonstr-linkedin-5.svg",
     name: "LinkedIn",
-    link: "",
+    link: "https://www.linkedin.com/in/sean-campbell-716295237/",
   },
 ]
