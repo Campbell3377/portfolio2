@@ -6,13 +6,12 @@ export default function About() {
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Sean. 
-            <br className="hidden lg:inline-block" />Software/Web Developer.
+            Hi, I'm Sean.
           </h1>
           <p className="mb-8 leading-relaxed">
             I am a recent ASU graduate with a degree in Computer Science. I am currently looking for a job as a software engineer.
             I have experience with React, Node.js, Express, MySQL, and more. I am also familiar with Java, C++, and C#. 
-            I am a quick learner and I'm always looking to learn new technologies.
+            I am a quick learner and always eager to learn new technologies.
           </p>
           <div className="flex justify-center">
             <a
