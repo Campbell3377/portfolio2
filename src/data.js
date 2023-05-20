@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "D3.js and JavaScript",
     description:
       "Data Analitics and Visualization using D3.js and JavaScript to read in and plot data from csv files to show trends in Spotify charts for artists and songs.",
-    image: "./proj-1.gif",
+    image: "./p1-2.gif",
     link: "https://github.com/Campbell3377/dataVis",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "3D Vis & Web Design",
     description:
       "3D Visualization and Web Design for NASA's Mission to Psyche. This project was made for my ASU Capstone project and done in collaboration with NASA's Psyche Mission team.",
-    image: "./proj-2.gif",
+    image: "./p2.gif",
     link: "https://missiontopsyche.github.io/2022_17a_vis_psyche/",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "MySQL and node.js",
     description:
       "The backend for this social media application is built on MySQL and Node.js. The frontend is built with Vanilla JavaScript, with no external libraries or frameworks.",
-    image: "./proj-3.gif",
+    image: "./p3.gif",
     link: "https://github.com/Campbell3377/SocialMedia",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     subtitle: ".NET and Web Services",
     description:
       "Web App using .NET Framework and Web Services to create a recipe management app. Used C#, WSDL services and RESTful APIs, Cookies, DLL classes, and Forms Security.",
-    image: "./proj-4.gif",
+    image: "./p4.gif",
     link: "https://github.com/Campbell3377/RecipesApp",
   },
 ];
