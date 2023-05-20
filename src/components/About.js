@@ -11,7 +11,7 @@ export default function About() {
           <p className="mb-8 leading-relaxed">
             I am a recent ASU graduate with a degree in Computer Science. I am currently looking for a job as a software engineer.
             I have experience with React, Node.js, Express, MySQL, and more. I am also familiar with Java, C++, and C#. 
-            I am a quick learner and always eager to learn new technologies.
+            I am a quick learner and I'm always eager to learn new technologies.
           </p>
           <div className="flex justify-center">
             <a
