@@ -17,10 +17,13 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    const myForm = e.target;
+    const formData = new FormData(myForm);
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
+      body: new URLSearchParams(formData).toString(),
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
@@ -31,7 +34,7 @@ export default function Contact() {
       <div className="container lg:w-4/5 md:w-4/5 px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap justify-center items-center">
         
         <form
-          netlify="true"
+          data-netlify="true"
           name="contact"
           onSubmit={handleSubmit}
           className=" flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
