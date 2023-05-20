@@ -35,7 +35,7 @@ export default function Projects() {
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h1>
-                  <hr class="my-12 h-px border-t-1 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+                  <hr className="my-12 h-px border-t-1 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
                   <p className="leading-relaxed">{project.description}</p>
                 </div>
               </div>

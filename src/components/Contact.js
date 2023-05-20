@@ -31,7 +31,7 @@ export default function Contact() {
       <div className="container lg:w-4/5 md:w-4/5 px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap justify-center items-center">
         
         <form
-          netlify
+          netlify="true"
           name="contact"
           onSubmit={handleSubmit}
           className=" flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
