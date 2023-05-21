@@ -65,7 +65,7 @@ export const skills = [
   "GitHub",
   "VS Code",
   "Visual Studio",
-  "Blender",
+  "Mobile Development (Swift)",
   "Adobe Photoshop & Illustrator",
 ];
 
