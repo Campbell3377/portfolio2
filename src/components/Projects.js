@@ -1,21 +1,37 @@
 import { CodeIcon } from "@heroicons/react/solid";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { projects } from "../data";
+import gsap, { Power3 } from "gsap";
 
 export default function Projects() {
+  let icon = useRef(null);
+  let header = useRef(null);
+  let sub = useRef(null);
+  let proj = useRef(null);
+
+  useEffect(() => {
+    console.log("useEffect")
+    gsap.timeline({ease: Power3.easeOut})
+      .from(icon, {duration: 1, opacity: 0, y: 600}, "+=1")
+      .from(header, {duration: 1, opacity: 0, y: 500}, "-=.5")
+      .from(sub, {duration: 1, opacity: 0, y: 400}, "-=.75")
+      .from(proj, {duration: 1, opacity: 0, y: 300}, "-=.75")
+
+  }, [])
+
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
+        <div ref={el => {icon = el}} className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+          <h1 ref={el =>{header = el}} className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I've Built
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p ref={el =>{sub = el}} className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Here are some of the projects I have worked on. The technologies/languages I used for these projects include: html, css, JavaScript, d3.js, node.js, express.js, React, MySQL, and .NET with C#. 
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div ref={el =>{proj = el}} className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
               href={project.link}
