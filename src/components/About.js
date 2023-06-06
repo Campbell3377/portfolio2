@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap, { Power3 } from "gsap";
 
 export default function About() {
@@ -9,7 +9,7 @@ export default function About() {
     let img = useRef(null);
 
     useEffect(() => {
-      gsap.timeline({ease: Power3.easeOut})
+      gsap.timeline({ease: Power3.easeIn})
       .from(head, {duration: 1, opacity: 0, y: 600})
       .from(sub, {duration: 1, opacity: 0, y: 500}, "-=.5")
       .from(btn1, {duration: 1, opacity: 0, y: 400}, "-=.75")
@@ -22,8 +22,8 @@ export default function About() {
         <section id="about">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 ref={el => {head = el}} className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Sean.
+          <h1 ref={el => {head = el}} className="title-font sm:text-4xl text-4xl mb-4 font-medium tracking-tight text-white customh2">
+            Hi, I'm Sean. 
           </h1>
           <p ref={el => sub = el} className="mb-8 leading-relaxed">
             I am a recent ASU graduate with a degree in Computer Science. I am currently looking for a job as a software engineer.
@@ -51,6 +51,7 @@ export default function About() {
           />
         </div>
       </div>
+
     </section>
     );
 }
